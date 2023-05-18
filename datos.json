@@ -1,0 +1,21 @@
+[
+  {
+    "columna1": "Dato 1",
+    "columna2": "Dato 2",
+    "columna3": "Dato 3",
+    "columna4": "Dato 4",
+    "columna5": "Dato 5",
+    "columna6": "Dato 6",
+    "columna7": "Dato 7"
+  },
+  {
+    "columna1": "Dato 8",
+    "columna2": "Dato 9",
+    "columna3": "Dato 10",
+    "columna4": "Dato 11",
+    "columna5": "Dato 12",
+    "columna6": "Dato 13",
+    "columna7": "Dato 14"
+  },
+  // Agrega más objetos con los datos adicionales
+]
