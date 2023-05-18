@@ -3,6 +3,9 @@
 <head>
   <title>Tabla de datos</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <table id="tablaDatos">
@@ -26,17 +29,17 @@
     // Código JavaScript para cargar y mostrar los datos de un archivo JSON
     $(document).ready(function() {
       $.getJSON("datos.json", function(data) {
-        $.each(data, function(index, item) {
-          var fila = "<tr>" +
-            "<td>" + item.Player + "</td>" +
-            "<td>" + item.Rol + "</td>" +
-            "<td>" + item.Elo + "</td>" +
-            "<td>" + item.Partidas + "</td>" +
-            "<td>" + item.Ganadas + "</td>" +
-            "<td>" + item.Perdidas + "</td>" +
-            "<td>" + item.Winrate + "</td>" +
-            "</tr>";
-          $("#tablaDatos tbody").append(fila);
+        var tabla = $("#tablaDatos").DataTable({
+          data: data,
+          columns: [
+            { data: "Player" },
+            { data: "Rol" },
+            { data: "Elo" },
+            { data: "Partidas" },
+            { data: "Ganadas" },
+            { data: "Perdidas" },
+            { data: "Winrate" }
+          ]
         });
       });
     });
