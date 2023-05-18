@@ -1,20 +1,47 @@
 [
-  {
-    "columna1": "Dato 1",
-    "columna2": "Dato 2",
-    "columna3": "Dato 3",
-    "columna4": "Dato 4",
-    "columna5": "Dato 5",
-    "columna6": "Dato 6",
-    "columna7": "Dato 7"
-  },
-  {
-    "columna1": "Dato 8",
-    "columna2": "Dato 9",
-    "columna3": "Dato 10",
-    "columna4": "Dato 11",
-    "columna5": "Dato 12",
-    "columna6": "Dato 13",
-    "columna7": "Dato 14"
-  }
-]
+    {
+     "Player": "D3oxys",
+     "Rol": "Top",
+     "Elo": "Diamante 1",
+     "Partidas": 300,
+     "Ganadas": 123,
+     "Perdidas": 177,
+     "Winrate": 41
+    },
+    {
+     "Player": "Near",
+     "Rol": "Jg",
+     "Elo": "Maestro",
+     "Partidas": 600,
+     "Ganadas": 213,
+     "Perdidas": 387,
+     "Winrate": 35.5
+    },
+    {
+     "Player": "Ch4ser",
+     "Rol": "Mid",
+     "Elo": "Gran Maestro",
+     "Partidas": 249,
+     "Ganadas": 132,
+     "Perdidas": 117,
+     "Winrate": 53.0
+    },
+    {
+     "Player": "Sooty",
+     "Rol": "ADC",
+     "Elo": "Challenger",
+     "Partidas": 187,
+     "Ganadas": 111,
+     "Perdidas": 76,
+     "Winrate": 59.3
+    },
+    {
+     "Player": "Safe",
+     "Rol": "Supp",
+     "Elo": "Diamante 3",
+     "Partidas": 412,
+     "Ganadas": 222,
+     "Perdidas": 190,
+     "Winrate": 53.8
+    }
+   ]
