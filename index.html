@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de datos</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <table id="tablaDatos">
+    <thead>
+      <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+        <th>Columna 4</th>
+        <th>Columna 5</th>
+        <th>Columna 6</th>
+        <th>Columna 7</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se insertarán las filas de datos -->
+    </tbody>
+  </table>
+
+  <script>
+    // Código JavaScript para cargar y mostrar los datos de un archivo JSON
+    $(document).ready(function() {
+      $.getJSON("datos.json", function(data) {
+        $.each(data, function(index, item) {
+          var fila = "<tr>" +
+            "<td>" + item.columna1 + "</td>" +
+            "<td>" + item.columna2 + "</td>" +
+            "<td>" + item.columna3 + "</td>" +
+            "<td>" + item.columna4 + "</td>" +
+            "<td>" + item.columna5 + "</td>" +
+            "<td>" + item.columna6 + "</td>" +
+            "<td>" + item.columna7 + "</td>" +
+            "</tr>";
+          $("#tablaDatos tbody").append(fila);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
