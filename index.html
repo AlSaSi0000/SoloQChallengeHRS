@@ -8,13 +8,13 @@
   <table id="tablaDatos">
     <thead>
       <tr>
-        <th>Columna 1</th>
-        <th>Columna 2</th>
-        <th>Columna 3</th>
-        <th>Columna 4</th>
-        <th>Columna 5</th>
-        <th>Columna 6</th>
-        <th>Columna 7</th>
+        <th>Player</th>
+        <th>Rol</th>
+        <th>Elo</th>
+        <th>Partidas Totales</th>
+        <th>Partidas Ganadas</th>
+        <th>Partidas Perdidas</th>
+        <th>Winrate (%)</th>
       </tr>
     </thead>
     <tbody>
@@ -28,13 +28,13 @@
       $.getJSON("datos.json", function(data) {
         $.each(data, function(index, item) {
           var fila = "<tr>" +
-            "<td>" + item.columna1 + "</td>" +
-            "<td>" + item.columna2 + "</td>" +
-            "<td>" + item.columna3 + "</td>" +
-            "<td>" + item.columna4 + "</td>" +
-            "<td>" + item.columna5 + "</td>" +
-            "<td>" + item.columna6 + "</td>" +
-            "<td>" + item.columna7 + "</td>" +
+            "<td>" + item.Player + "</td>" +
+            "<td>" + item.Rol + "</td>" +
+            "<td>" + item.Elo + "</td>" +
+            "<td>" + item.Partidas + "</td>" +
+            "<td>" + item.Ganadas + "</td>" +
+            "<td>" + item.Perdidas + "</td>" +
+            "<td>" + item.Winrate + "</td>" +
             "</tr>";
           $("#tablaDatos tbody").append(fila);
         });
